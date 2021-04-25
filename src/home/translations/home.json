@@ -1,0 +1,7 @@
+{
+    "logoAlternativeText": "Breeds list",
+    "changeTheme": "Change to {{availableTheme}} theme",
+    "breedNotFound": "We were unable to retrieve breed's photos",
+    "breedsNotRetrieved": "We were unable to retrieve breeds list",
+    "subBreedsNotRetrieved": "We were unable to retrieve sub breeds list for the given breed"
+}

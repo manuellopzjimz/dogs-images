@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./src",
+        "paths": {
+            "@Home/*": ["./home/*"],
+            "@Search/*": ["./search/*"],
+            "@DisplayResults/*": ["./results/*"]
+         }
+    }
+}

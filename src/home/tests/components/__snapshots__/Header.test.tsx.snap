@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeaderComponent should be rendered correctly 1`] = `
+<div>
+  <header
+    class="sc-bdvvaa bzxsTt"
+  >
+    <div>
+      Left content
+    </div>
+    <div>
+      Right content
+    </div>
+  </header>
+</div>
+`;

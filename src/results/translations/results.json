@@ -1,0 +1,5 @@
+{
+    "numberOfResults": "We have found {{count}} photo",
+    "numberOfResults_plural": "We have found {{count}} photos",
+    "alternativeTextPhoto": "Photo number {{number}} of {{breed}}"
+}

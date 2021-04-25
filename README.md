@@ -1,46 +1,64 @@
-# Getting Started with Create React App
+# Breeds images
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Installation
 
-## Available Scripts
+You can use NPM or Yarn to install project's dependencies since it includes both yarn.lock and package-lock.json.
 
-In the project directory, you can run:
+```javascript
+npm i
+yarn install
+```
 
-### `yarn start`
+## Run development server
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```javascript
+yarn run start
+npm run start
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Run Storybook project locally
 
-### `yarn test`
+Storybook is a tool for UI development. It makes development faster and easier by isolating components. This allows you to work on one component at a time. You can develop entire UIs without needing to start up a complex dev stack, force certain data into your database, or navigate around your application.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```javascript
+yarn run storybook
+npm run storybook
+```
 
-### `yarn build`
+## Testing
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This project includes unit tests, a11y tests and e2e tests with Cypress.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Run unit tests in dev mode
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This command will run unit tests in watch mode, so the will be re executed after you modify any file.
 
-### `yarn eject`
+```javascript
+yarn run test:dev
+npm run test:dev
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+This command can be used in CI pipelines to run unit tests and also to generate project's coverage.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```javascript
+yarn run test:ci
+npm run test:ci
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Run a11y test
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+This command will launch Webpack's dev server and pa11y will check the generated website.
 
-## Learn More
+```javascript
+yarn run test:a11y
+npm run test:a11y
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Run e2e tests
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This command will launch Webpack's dev server and Cypress will execute e2e tests in Chrome browser (headless mode)
+
+```javascript
+yarn run test:e2e
+npm run test:e2e
+```
